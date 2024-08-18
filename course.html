@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make A Website Using HTML & CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+
+  <!--**************************************************/
+*** @Author: Mosaddik Billah                        *** 
+*** @Author URL: https://mosaddikbillah.vercel.app/ ***
+*** @Email: mosaddek.b1307@gmail.com                *** 
+*** @Contact: www.facebook.com/mosaddik.billahh     ***
+*** @Copyright:©Mosaddik 2024                       ***
+/***************************************************-->
+
+  <body>
+    <!-- idea:-------Header--------->
+    <!-- info:logo -->
+    <section class="sub_header">
+      <nav>
+        <a href="index.html"><img src="Images/logo.png" /></a>
+        <!-- info:navigation bar links -->
+        <div class="nav_links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURCE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Courses</h1>
+    </section>
+
+    <!-- idea:-------Course--------->
+
+    <section class="cource">
+      <h1>Courses We Offer</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, est!</p>
+
+      <div class="row">
+        <div class="cource_col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto nemo nam dolor? Est, ab? Officiis quam
+            quasi quod? Modi atque voluptates cumque sapienteincidun
+          </p>
+        </div>
+
+        <div class="cource_col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto nemo nam dolor? Est, ab? Officiis quam
+            quasi quod? Modi atque voluptates cumque sapienteincidun
+          </p>
+        </div>
+
+        <div class="cource_col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto nemo nam dolor? Est, ab? Officiis quam
+            quasi quod? Modi atque voluptates cumque sapienteincidun
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- idea:-----Facilities------->
+
+    <section class="facilities">
+      <h1>Our Facilities</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, est!</p>
+      <div class="row">
+        <div class="facilities_col">
+          <img src="Images/library.png" />
+          <h3>World Class Library</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, est!</p>
+        </div>
+        <div class="facilities_col">
+          <img src="Images/basketball.png" />
+          <h3>Largest Play Ground</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, est!</p>
+        </div>
+        <div class="facilities_col">
+          <img src="Images/cafeteria.png" />
+          <h3>Tasty And Healthy Food</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, est!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- idea:------FOOTER--------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quis architecto tempore voluptatem
+        <br />pariatur adipisci accusamus explicabo alias velit itaque.
+      </p>
+      <p>©Copyright 2024. All Rights Reserved</p>
+      <p><a href="https://mosaddikbillah.vercel.app/">Made With Mosaddik</a></p>
+    </section>
+
+    <!-- note:JavaScript  for toggle menu  -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
